@@ -66,3 +66,125 @@
 
     .header-nav-link {font-size: 13px;}
 }
+:root {
+  --background: #101113;
+  --surface: #1a1c1f;
+  --text: #f3f1ed;
+  --secondary: #acaeb3;
+  --warm-coral: #f28d77;
+  --border: #303237;
+  --main-button-text: #241512;
+  --sub-button-text: #232529;
+  --profile-background: #1a1c1f;
+}
+body {
+  background-color: var(--background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text);
+}
+p {
+  color: var(--secondary);
+}
+span {
+  color: var(--secondary);
+}
+a {
+  color: var(--secondary);
+}
+li {
+  color: var(--secondary);
+}
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+ul {
+  list-style: none;
+}
+.Today-New-World,
+.Deep-Night {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  padding: 16px 0px 64px;
+}
+.TNW-header,
+.DN-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0px 64px;
+}
+.TNW-header-up,
+.DN-header-up {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.TNW-content,
+.DN-content {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  width: 100%;
+  padding: 0px 64px;
+}
+
+/* my page */
+
+/* mypage */
+.mypage-profile-image {
+  width: 88px;
+  height: 88px;
+}
+.mypage-mypage {
+  flex-direction: column;
+  margin: 56px 64px 48px;
+  gap: 12px;
+  padding: 0;
+}
+.mypage-my-cinemo {
+  font-size: 11px;
+  color: var(--warm-coral);
+}
+.mypage-mypage-p {
+  font-size: 14px;
+  color: var(--secondary);
+}
+/**/
+.mypage-content {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  width: 100%;
+}
+.mypage-basic-profile {
+  font-size: 11px;
+  color: var(--warm-coral);
+}
+.mypage-profile-button {
+  display: flex;
+  justify-content: center;
+}
+
+.mypage-profile {
+  display: flex;
+  background-color: var(--profile-background);
+  margin: 48px 64px;
+  border-radius: 4px;
+  padding: 0;
+}
+.mypage-account-settings {
+  flex-direction: column;
+  margin: 48px 64px;
+  padding: 0;
+}
