@@ -15,4 +15,74 @@
   background-color: #f5f5f5;
   margin: 61px 64px;
   padding: 0;
+:root {
+  --background: #101113;
+  --surface: #1a1c1f;
+  --text: #f3f1ed;
+  --secondary: #acaeb3;
+  --warm-coral: #f28d77;
+  --border: #303237;
+  --main-button-text: #241512;
+  --sub-button-text: #232529;
+}
+body {
+  background-color: var(--background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text);
+}
+p {
+  color: var(--secondary);
+}
+span {
+  color: var(--secondary);
+}
+a {
+  color: var(--secondary);
+}
+li {
+  color: var(--secondary);
+}
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+ul {
+  list-style: none;
+}
+.Today-New-World,
+.Deep-Night {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  padding: 16px 0px 64px;
+}
+.TNW-header,
+.DN-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0px 64px;
+}
+.TNW-header-up,
+.DN-header-up {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.TNW-content,
+.DN-content {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  width: 100%;
+  padding: 0px 64px;
 }
