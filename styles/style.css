@@ -1,0 +1,18 @@
+.mypage-mypage {
+  flex-direction: column;
+  background-color: #f5f5f5;
+  margin: 61px 64px;
+  padding: 0;
+}
+.mypage-profile {
+  flex-direction: column;
+  background-color: #f5f5f5;
+  margin: 61px 64px;
+  padding: 0;
+}
+.mypage-account-settings {
+  flex-direction: column;
+  background-color: #f5f5f5;
+  margin: 61px 64px;
+  padding: 0;
+}
