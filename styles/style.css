@@ -102,8 +102,8 @@ li {
   color: var(--secondary);
 }
 main .M-S-2 img {
-  width: 100%;
-  height: auto;
+  width: 310px;
+  height: 174px;
   object-fit: cover;
 }
 ul {
@@ -124,6 +124,7 @@ ul {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  max-width: 1440px;
 }
 .TNW-header-up,
 .DN-header-up {
@@ -173,7 +174,14 @@ ul {
   font-weight: 400;
   margin: 0;
 }
-
+@media (max-width: 767px) {
+  .M-S-2 ul {
+    overflow-x: auto;
+  }
+  .TNW-header-up-text {
+    display: none;
+  }
+}
 /* my page */
 
 /* mypage */
