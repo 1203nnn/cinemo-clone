@@ -242,23 +242,18 @@ ul {
 /*마이페이지 헤더 끝*/
 
 /*마이페이지 섹션 시작*/
-/*마이페이지 섹션 끝*/
-
-/*마이페이지 푸터 시작*/
-/*마이페이지 푸터 끝*/
-
-/*마이페이지 끝*/
-
+.body-class {
+}
+.mypage-profile-imageY {
+}
 .mypage-profile-image {
+  position: relative;
   width: 88px;
   height: 88px;
 }
-.mypage-profile-imageY .mypage-profile-image-Y {
+.mypage-profile-image-Y {
   position: absolute;
   font-size: 42px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: var(--text);
 }
 .mypage-mypage {
@@ -277,6 +272,8 @@ ul {
 
 /*contant*/
 
+.content-images {
+}
 .mypage-content {
   display: flex;
   flex-direction: row;
@@ -314,6 +311,13 @@ ul {
   margin: 48px 64px;
   padding: 0;
 }
+
+/*마이페이지 섹션 끝*/
+
+/*마이페이지 푸터 시작*/
+/*마이페이지 푸터 끝*/
+
+/*마이페이지 끝*/
 
 /*프로필 시작*/
 
