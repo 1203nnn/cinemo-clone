@@ -1,3 +1,4 @@
+/*기본세팅*/
 :root {
   --background: #101113;
   --surface: #1a1c1f;
@@ -33,10 +34,11 @@ a {
 li {
   color: var(--secondary);
 }
+/*기본세팅*/
 
-/*main index*/
+/*메인 인덱스 시작*/
 
-/*main index header*/
+/*메인 인덱스 헤더 시작*/
 .header {
   display: flex;
   align-items: center;
@@ -135,10 +137,12 @@ li {
     font-size: 13px;
   }
 }
+/*메인 인덱스 헤더 끝*/
 
-/*main index section1*/
+/*메인 인덱스 섹션1 시작*/
+/*메인 인덱스 섹션1 끝*/
 
-/*main index section2*/
+/*메인 인덱스 섹션2 시작*/
 main .M-S-2 img {
   width: 310px;
   height: 174px;
@@ -225,14 +229,25 @@ ul {
     font-size: 20px;
   }
 }
+/*메인 인덱스 섹션2 끝*/
 
-/*mypage*/
+/*메인 인덱스 푸터 시작*/
+/*메인 인덱스 푸터 끝*/
 
-/*mypage header*/
+/*메인 인덱스 끝*/
 
-/*mypage section*/
+/*마이페이지 시작*/
 
-/*mypage footer*/
+/*마이페이지 헤더 시작*/
+/*마이페이지 헤더 끝*/
+
+/*마이페이지 섹션 시작*/
+/*마이페이지 섹션 끝*/
+
+/*마이페이지 푸터 시작*/
+/*마이페이지 푸터 끝*/
+
+/*마이페이지 끝*/
 
 .mypage-profile-image {
   width: 88px;
@@ -281,10 +296,15 @@ ul {
   padding: 0;
 }
 
-/*profile*/
+/*프로필 시작*/
 
-/*profile header*/
+/*프로필 헤더 시작*/
+/*프로필 헤더 끝*/
 
-/*profile section*/
+/*프로필 섹션 시작*/
+/*프로필 섹션 끝*/
 
-/*profile footer*/
+/*프로필 푸터 시작*/
+/*프로필 푸터 끝*/
+
+/*프로필 끝*/
