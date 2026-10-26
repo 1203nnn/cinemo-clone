@@ -33,42 +33,77 @@ a {
 li {
   color: var(--secondary);
 }
-img {
+main .M-S-2 img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .Today-New-World,
 .Deep-Night {
   display: flex;
   flex-direction: column;
-  max-width: 1440px;
-  padding: 16px 0px 64px;
+  padding: 16px 64px 64px;
+  box-sizing: border-box;
+  gap: 48px;
 }
 .TNW-header,
 .DN-header {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  padding: 0px 64px;
+  box-sizing: border-box;
 }
 .TNW-header-up,
 .DN-header-up {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .TNW-content,
 .DN-content {
   display: flex;
   flex-direction: row;
-  gap: 24px;
+  column-gap: 24px;
   width: 100%;
-  padding: 0px 64px;
+  box-sizing: border-box;
+}
+.content-view {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 12px;
+}
+
+.Today-New-World h2,
+.Deep-Night h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+.Today-New-World h3,
+.Deep-Night h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+.TNW-content p,
+.DN-content p {
+  font-size: 11px;
+  font-weight: 400;
+  margin: 0;
+}
+.TNW-header p,
+.DN-header p {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
 }
 
 /* my page */
