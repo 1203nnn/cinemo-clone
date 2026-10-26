@@ -105,6 +105,7 @@ main .M-S-2 img {
   width: 310px;
   height: 174px;
   object-fit: cover;
+  border-radius: 4px;
 }
 ul {
   list-style: none;
@@ -180,6 +181,10 @@ ul {
   }
   .TNW-header-up-text {
     display: none;
+  }
+  .Today-New-World h2,
+  .Deep-Night h2 {
+    font-size: 20px;
   }
 }
 /* my page */
