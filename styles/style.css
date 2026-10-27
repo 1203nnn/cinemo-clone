@@ -124,7 +124,7 @@ li {
   position: relative;
   z-index: 1;
   color: #f3f1ed;
-  font-family: 'inter', sans-serif;
+  font-family: "inter", sans-serif;
   font-size: 15.36px;
   font-weight: 400;
   line-height: 1;
@@ -171,13 +171,13 @@ li {
   .header-nav-link {
     font-size: 13px;
   }
-  .header-nav{
-    overflow-x:  auto;
+  .header-nav {
+    overflow-x: auto;
   }
 }
 @media (max-width: 1023px) {
   .header {
-    gap:32px;
+    gap: 32px;
     padding: 0 32px;
   }
 }
@@ -352,12 +352,29 @@ li {
     height: 573px;
     overflow: hidden;
     margin: auto;
+    object-position: center;
+  }
+  .mv-poster {
+    width: 693px;
+    height: 390;
+    object-position: right;
+  }
+  .mv-up {
+    width: 342px;
+    gap: 20px;
   }
   .mv-left-gradation {
     display: none;
   }
+  .main-visual-info {
+    justify-content: flex-end;
+    padding: auto auto 300px 24px;
+  }
   .mv-down {
     display: none;
+  }
+  .mv-title-text {
+    font-size: 40px;
   }
 }
 /*메인 인덱스 섹션1 끝*/
@@ -461,7 +478,8 @@ main .m-s-2 img {
   padding: 40px 64px;
   border-top: 1px solid #303237;
 }
-.footer-nav {display: flex;
+.footer-nav {
+  display: flex;
   gap: 32px;
 }
 .footer-link {
