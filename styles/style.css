@@ -385,6 +385,8 @@ li {
   .mv-description {
     font-size: 14px;
   }
+  @media (max-width: 1023px) {
+  }
 }
 /*메인 인덱스 섹션1 끝*/
 
@@ -407,7 +409,6 @@ main .m-s-2 img {
 .deep-night {
   display: flex;
   flex-direction: column;
-  padding: 0 64px 0 64px;
   box-sizing: border-box;
   gap: 20px;
   max-width: 1440px;
@@ -426,6 +427,7 @@ main .m-s-2 img {
   flex-direction: column;
   box-sizing: border-box;
   max-width: 1440px;
+  padding: 0 64px 0 64px;
 }
 .tnw-header-up,
 .dn-header-up {
@@ -450,6 +452,12 @@ main .m-s-2 img {
   width: 100%;
   box-sizing: border-box;
   gap: 12px;
+}
+.content-first-child {
+  padding-left: 64px;
+}
+.content-last-child {
+  padding-right: 64px;
 }
 
 .today-new-world h2,
@@ -477,10 +485,15 @@ main .m-s-2 img {
   margin: 0;
 }
 @media (max-width: 767px) {
-  .today-new-world,
-  .deep-night {
-    padding: 0 0 0 24px;
-    gap: 18px;
+  .tnw-header,
+  .dn-header {
+    padding: 0 24px 0 24px;
+  }
+  .content-first-child {
+    padding-left: 24px;
+  }
+  .content-last-child {
+    padding-right: 24px;
   }
   .today-new-world {
     padding-top: 8px;
@@ -769,7 +782,7 @@ main .m-s-2 img {
 .profile-title {
   font-size: 40px;
   color: var(--text);
-} 
+}
 
 .profile-description {
   font-size: 15px;
@@ -784,7 +797,7 @@ main .m-s-2 img {
 .profile-name {
   font-size: 18px;
   color: var(--text);
-} 
+}
 
 .profile-bio {
   font-size: 11px;
