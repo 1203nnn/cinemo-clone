@@ -12,6 +12,7 @@
 }
 body {
   background-color: var(--background);
+  margin: 0;
 }
 
 h1,
@@ -124,7 +125,7 @@ li {
   position: relative;
   z-index: 1;
   color: #f3f1ed;
-  font-family: 'inter', sans-serif;
+  font-family: "inter", sans-serif;
   font-size: 15.36px;
   font-weight: 400;
   line-height: 1;
@@ -171,13 +172,14 @@ li {
   .header-nav-link {
     font-size: 13px;
   }
-  .header-nav{
-    overflow-x:  auto;
+  .header-nav {
+    overflow-x: auto;
+    padding-right: 0px;
   }
 }
 @media (max-width: 1023px) {
   .header {
-    gap:32px;
+    gap: 32px;
     padding: 0 32px;
   }
 }
@@ -352,17 +354,43 @@ li {
     height: 573px;
     overflow: hidden;
     margin: auto;
+    object-position: center;
+  }
+  .mv-poster {
+    width: 100%;
+    height: 390px;
+    object-position: 70%center;
+  }
+  .mv-up {
+    width: 342px;
+    gap: 20px;
   }
   .mv-left-gradation {
     display: none;
   }
+  .mv-bottom-gradation {
+    height: 50%;
+    margin-bottom: 183px;
+  }
+  .main-visual-info {
+    margin-top: 185px;
+    padding-left: 24px;
+  }
   .mv-down {
     display: none;
+  }
+  .mv-title-text {
+    font-size: 40px;
+  }
+  .mv-description {
+    font-size: 14px;
   }
 }
 /*메인 인덱스 섹션1 끝*/
 
 /*메인 인덱스 섹션2 시작*/
+.m-s-2 {
+}
 main .m-s-2 img {
   width: 310px;
   height: 174px;
@@ -379,11 +407,18 @@ main .m-s-2 img {
 .deep-night {
   display: flex;
   flex-direction: column;
-  padding: 16px 64px 64px;
+  padding: 0 64px 0 64px;
   box-sizing: border-box;
-  gap: 48px;
+  gap: 20px;
   max-width: 1440px;
   margin: auto;
+}
+.today-new-world {
+  padding-top: 16px;
+}
+.deep-night {
+  padding-top: 48px;
+  padding-bottom: 64px;
 }
 .tnw-header,
 .dn-header {
@@ -442,6 +477,18 @@ main .m-s-2 img {
   margin: 0;
 }
 @media (max-width: 767px) {
+  .today-new-world,
+  .deep-night {
+    padding: 0 0 0 24px;
+    gap: 18px;
+  }
+  .today-new-world {
+    padding-top: 8px;
+  }
+  .deep-night {
+    padding-top: 36px;
+    padding-bottom: 40px;
+  }
   .tnw-header-up-text,
   .dn-header-up-text {
     display: none;
@@ -461,7 +508,8 @@ main .m-s-2 img {
   padding: 40px 64px;
   border-top: 1px solid #303237;
 }
-.footer-nav {display: flex;
+.footer-nav {
+  display: flex;
   gap: 32px;
 }
 .footer-link {
