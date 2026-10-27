@@ -263,6 +263,11 @@ ul {
 /*메인 인덱스 끝*/
 
 /*마이페이지 시작*/
+@media (max-width: 767px) {
+  .mypage-mypage .mypage-profile {
+    margin-left: auto 24px auto 24px;
+  }
+}
 
 /*마이페이지 헤더 시작*/
 .header-profile-name-mypage {
@@ -278,6 +283,14 @@ ul {
   margin: 48px 64px;
   border-radius: 4px;
   padding: 0;
+}
+.mypage-my-cinemo {
+  font-size: 11px;
+  color: var(--warm-coral);
+}
+.mypage-mypage-p {
+  font-size: 14px;
+  color: var(--secondary);
 }
 
 /*마이페이지 마이프로필*/
@@ -297,33 +310,9 @@ ul {
   font-size: 42px;
   background: url("../assets/images/profile-b.webp") center / contain no-repeat;
 }
-
-/*contant*/
-
-.content-images {
-}
-.mypage-content {
+.mypage-profile-name {
   display: flex;
-  flex-direction: row;
-  margin: 48px 64px;
-  gap: 24px;
-  width: 100%;
-}
-
-.mypage-my-cinemo {
-  font-size: 11px;
-  color: var(--warm-coral);
-}
-.mypage-mypage-p {
-  font-size: 14px;
-  color: var(--secondary);
-}
-/**/
-.mypage-content {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-  width: 100%;
+  flex-direction: column;
 }
 .mypage-basic-profile {
   font-size: 11px;
@@ -334,25 +323,133 @@ ul {
   justify-content: center;
 }
 
+/*contant*/
+
+.mypage-content {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 24px 64px;
+  gap: 24px;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+@media (max-width: 767px) {
+  .mypage-content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin: 24px 24px 36px;
+    gap: 16px;
+  }
+}
+.content-images h2 {
+  font-size: 24px;
+  margin-left: 64px;
+}
+
+.mypage-content img {
+  max-width: 100%;
+  margin-bottom: 12px;
+  padding: 0px;
+}
+.mypage-content h3 {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 4px;
+  padding: 0px;
+}
+.mypage-content p {
+  font-size: 11px;
+  margin: 0;
+}
+
+/* 콘텐츠 */
+/*========================수정필요(줄이 hr이아니라 border임=======================================*/
+/* 계정 설정 */
 .mypage-account-settings {
-  flex-direction: column;
-  margin: 48px 64px;
+  margin: 48px 64px 64px 64px;
   padding: 0;
 }
-
-/* 마이페이지 계정설정*/
-
-.mypage-content-list {
-  width: 100%;
+.mypage-account-settings h2 {
+  font-size: 24px;
+  margin: 0;
 }
-
+.mypage-content-text-e {
+  display: flex;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.mypage-content-text-p {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+}
+.mypage-content-text-m {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+}
+.mypage-content-text-l {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+}
+.mypage-content-text {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+}
 .mypage-content-button {
   display: flex;
-  justify-content: flex-end;
+  margin-left: auto;
+
   background-color: var(--background);
   border: none;
   color: var(--warm-coral);
+  flex-shrink: 0;
 }
+
+@media (max-width: 767px) {
+  .mypage-content-text {
+    display: flex;
+    align-items: center;
+    width: auto;
+  }
+
+  .mypage-content-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .mypage-content-button {
+    margin-left: 16px;
+    flex-shrink: 0;
+  }
+}
+.mypage-logout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 25.5px;
+}
+
+.mypage-content-logout-p {
+  margin: 0;
+}
+
+.mypage-content-logout-button {
+  margin-left: auto;
+  color: var(--secondary);
+  background-color: var(--background);
+  border: none;
+}
+.mypage-account-settings hr {
+  border: none;
+  border-top: 1px solid var(--secondary);
+}
+
 /*마이페이지 섹션 끝*/
 
 /*마이페이지 푸터 시작*/
