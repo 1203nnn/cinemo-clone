@@ -815,9 +815,18 @@ main .m-s-2 img {
   padding: 24px;
   border-radius: 4px;;
 }
+.profile-image {
+  width: 152px;
+  height: 152px;
+}
 .profile-english {
-  font-size: 14px;
-  color: var(--text);
+  position: relative;
+  z-index: 1;
+  color: #f3f1ed;
+  font-family: 'inter', sans-serif;
+  font-size: 72.96px;
+  font-weight: 400;
+  line-height: 1;
 }
 
 .profile-name {
