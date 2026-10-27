@@ -774,6 +774,12 @@ main .m-s-2 img {
 /*프로필 헤더 끝*/
 
 /*프로필 섹션 시작*/
+.profile-intro {
+  display: flex;
+  justify-content: center;
+  font-size: 11px;      
+  color: var(--secondary);
+}
 .profile-eyebrow {
   display: flex;
   justify-content: center;
@@ -798,6 +804,7 @@ main .m-s-2 img {
 .profile-options {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 } 
 
 .profile-card {
@@ -806,7 +813,6 @@ main .m-s-2 img {
   align-items: center;
   gap: 8px;
   padding: 24px;
-  background-color: var(--surface);
   border-radius: 4px;;
 }
 .profile-english {
@@ -815,11 +821,17 @@ main .m-s-2 img {
 }
 
 .profile-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 18px;
   color: var(--text);
 }
 
 .profile-bio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 11px;
   color: var(--secondary);
 }
@@ -829,7 +841,7 @@ main .m-s-2 img {
   align-items: center;
 }
 .profile-manage-button {
-   background-color: var(--background);
+  background-color: var(--background); 
   width: 138px;
   height: 48px;
   display: flex;
