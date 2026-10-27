@@ -692,9 +692,47 @@ main .m-s-2 img {
 /*프로필 헤더 끝*/
 
 /*프로필 섹션 시작*/
+.profile-eyebrow {
+  font-size: 10px;
+  color: var(--warm-coral);
+}
+
+.profile-title {
+  font-size: 40px;
+  color: var(--text);
+} 
+
+.profile-description {
+  font-size: 15px;
+  color: var(--secondary);
+}
+
+.profile-english {
+  font-size: 14px;
+  color: var(--text);
+}
+
+.profile-name {
+  font-size: 18px;
+  color: var(--text);
+} 
+
+.profile-bio {
+  font-size: 11px;
+  color: var(--secondary);
+}
+
+.profile-label {
+  font-size: 14px;
+  color: var(--text);
+}
 /*프로필 섹션 끝*/
 
 /*프로필 푸터 시작*/
+.profile-footer {
+  font-size: 12px;
+  color: var(--secondary);
+}
 /*프로필 푸터 끝*/
 
 /*프로필 끝*/
