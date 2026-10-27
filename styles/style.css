@@ -97,7 +97,7 @@ li {
   object-fit: cover;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .header {
     flex-wrap: wrap;
     gap: 0;
@@ -265,6 +265,9 @@ ul {
 /*마이페이지 시작*/
 
 /*마이페이지 헤더 시작*/
+.header-profile-name-mypage {
+  color: #f28d77;
+}
 /*마이페이지 헤더 끝*/
 
 /*마이페이지 섹션 시작*/
