@@ -923,7 +923,6 @@ main .m-s-2 img {
 .mypage-content-text-moum {
   display: flex;
   flex-direction: row;
-  align-items: center;
 }
 .mypage-content-list > div {
   padding: 24px 0;
@@ -1009,7 +1008,7 @@ main .m-s-2 img {
 }
 .mypage-content-input {
   font-size: 14px;
-  font-weight: 400;
+
   margin: 0;
   color: var(--text);
 }
@@ -1031,7 +1030,7 @@ main .m-s-2 img {
 }
 @media (max-width: 767px) {
   .mypage-content-text-e {
-    height: 79px;
+    height: auto;
   }
   .mypage-content-text-moum {
     display: flex;
