@@ -1126,4 +1126,11 @@ main .m-s-2 img {
   .profile-footer {
     display: flex;
   }
+  .profile-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: none;
+    margin-bottom: none;
+  }
 }
