@@ -536,6 +536,8 @@ main .m-s-2 img {
   gap: 20px;
   padding: 40px 64px;
   border-top: 1px solid #303237;
+  max-width: 1440px;
+  margin: auto;
 }
 .footer-nav {
   display: flex;
@@ -567,6 +569,9 @@ main .m-s-2 img {
   }
   .footer-notice-line {
     display: block;
+  }
+  .footer {
+    padding: 32px 24px;
   }
 }
 @media (max-width: 359px) {
