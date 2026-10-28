@@ -331,6 +331,9 @@ li {
   justify-content: center;
   align-items: center;
   gap: 8px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
 }
 .mv-button-right {
   background-color: var(--sub-button-text);
@@ -342,6 +345,9 @@ li {
   justify-content: center;
   align-items: center;
   gap: 8px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
 }
 .mv-button-right img {
   padding-top: 3px;
