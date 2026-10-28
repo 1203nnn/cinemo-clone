@@ -831,7 +831,7 @@ main .m-s-2 img {
   .mypage-content-text-moum {
     display: flex;
     flex-direction: column;
-    margin: 20px 36px 20px 0px;
+
     gap: 6px;
   }
   .mypage-content-text {
