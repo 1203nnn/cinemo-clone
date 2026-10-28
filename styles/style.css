@@ -780,6 +780,14 @@ main .m-s-2 img {
   font-size: 11px;      
   color: var(--secondary);
 }
+.profile-selection {
+  gap: 56px;
+  padding-top: 116px;
+  padding-bottom: 120px;
+}
+.profile-introduction {
+  gap: 16px;
+}
 .profile-eyebrow {
   display: flex;
   justify-content: center;
@@ -805,6 +813,8 @@ main .m-s-2 img {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 56px;
+  margin-bottom: 56px;
 } 
 
 .profile-card {
@@ -856,6 +866,9 @@ main .m-s-2 img {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .profile-label {
