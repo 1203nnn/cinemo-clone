@@ -1106,11 +1106,24 @@ main .m-s-2 img {
 
 /*프로필 푸터 시작*/
 .profile-footer {
-  display: flex;
+  display: none;
   justify-content: center;
   font-size: 12px;
   color: var(--secondary);
 }
 /*프로필 푸터 끝*/
-
 /*프로필 끝*/
+@media (max-width: 767px) {
+  .profile-intro {
+    display: none;
+  } 
+  .profile-title {
+    font-size: 28px;
+  } 
+  .profile-description {
+    font-size: 13px;
+  }
+  .profile-footer {
+    display: flex;
+  }
+}
