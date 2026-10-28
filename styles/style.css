@@ -402,6 +402,9 @@ li {
     font-size: 14px;
   }
 }
+.main-content-view {
+  cursor: pointer;
+}
 /*메인 인덱스 섹션1 끝*/
 
 /*메인 인덱스 섹션2 시작*/
@@ -695,6 +698,9 @@ main .m-s-2 img {
   display: flex;
   margin-left: auto;
   align-items: center;
+}
+.mypage-profile-button-link {
+  text-decoration: none;
 }
 .mypage-profile-button {
   display: flex;
