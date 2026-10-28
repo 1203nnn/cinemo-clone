@@ -674,7 +674,7 @@ main .m-s-2 img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 28px;
+  gap: 24px;
   justify-content: space-between;
   width: 100%;
 }
@@ -737,17 +737,6 @@ main .m-s-2 img {
   text-decoration: none;
   gap: 8px;
 }
-.mypage-profile-button-link {
-  display: flex;
-  text-decoration: none;
-  align-items: center;
-  padding: 15.5px 22px;
-  border-radius: 4px;
-  border: 1px solid var(--border);
-  font-size: 14px;
-  gap: 8px;
-  padding: 15.5px 22px;
-}
 
 .mypage-profile-img {
   width: 15px;
@@ -779,7 +768,12 @@ main .m-s-2 img {
   margin: 0;
   color: #7e8289;
 }
-
+.mypage-profile-s-pc {
+  margin: 0px;
+}
+.mypage-profile-s-mobile {
+  display: none;
+}
 @media (max-width: 767px) {
   .mypage-profile-button {
     display: flex;
@@ -813,6 +807,46 @@ main .m-s-2 img {
   }
   .mypage-profile-s-text-2 {
     display: none;
+  }
+  .mypage-profile-s-pc {
+    display: none;
+  }
+  .mypage-profile-s-mobile {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .mypage-profile {
+    padding: 24px;
+  }
+  .mypage-profile-image-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .mypage-profile-button {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--border);
+    height: 16px;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    gap: 8px;
+  }
+  .mypage-profile-button-mom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .mypage-profile-imageY {
+    width: 64px;
+    height: 64px;
+  }
+  .mypage-profile-s-mobile {
+    margin: 0;
+  }
+  .mypage-profile {
+    height: 176px;
   }
 }
 /* 컨텐츠 */
@@ -896,6 +930,9 @@ main .m-s-2 img {
 .mypage-content-list > div {
   padding: 24px 0;
 }
+.mypage-content-list > div {
+  padding: 24px 0;
+}
 .mypage-content-text-e {
   display: flex;
   align-items: center;
@@ -924,8 +961,6 @@ main .m-s-2 img {
 .mypage-content-text {
   display: flex;
   width: 180px;
-}
-.mypage-content-input {
 }
 .mypage-content-button {
   display: flex;
@@ -1003,9 +1038,8 @@ main .m-s-2 img {
   .mypage-content-text-moum {
     display: flex;
     flex-direction: column;
-    margin: 20px 36px 20px 0px;
     gap: 6px;
-    height: 39px;
+    height: auto;
   }
   .mypage-content-text {
     margin: 0;
@@ -1094,18 +1128,18 @@ main .m-s-2 img {
 .profile-image-y {
   background-color: #718c91;
   background-image: url("../assets/images/profile-b.webp");
-  }
+}
 .profile-image-j {
   background-color: #c0a57e;
   background-image: url("../assets/images/profile-y.webp");
-  }
+}
 .profile-image-m {
   background-color: #9593ad;
   background-image: url("../assets/images/Profile-p.webp");
 }
 .profile-image-g {
   background-color: #7b8c75;
-  background-image: url("../assets/images/profile-g.webp")
+  background-image: url("../assets/images/profile-g.webp");
 }
 
 .profile-info {
