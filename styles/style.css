@@ -727,6 +727,16 @@ main .m-s-2 img {
   display: flex;
   align-items: center;
 }
+.mypage-profile-button {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border);
+  height: 48px;
+  padding: 0 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  gap: 8px;
+}
 .mypage-profile-button-link {
   display: flex;
   text-decoration: none;
@@ -818,7 +828,6 @@ main .m-s-2 img {
 .mypage-content {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  margin: 24px 0;
   gap: 24px;
   width: auto;
   height: auto;
@@ -828,7 +837,6 @@ main .m-s-2 img {
 }
 .mypage-content img {
   max-width: 100%;
-  margin: 0 0 12px 0;
   padding: 0px;
 }
 .mypage-content-header h2 {
