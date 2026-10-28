@@ -925,6 +925,10 @@ main .m-s-2 img {
 .mypage-content-text-moum {
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+.mypage-content-list > div {
+  padding: 24px 0;
 }
 .mypage-content-list > div {
   padding: 24px 0;
@@ -1184,11 +1188,31 @@ main .m-s-2 img {
 
 /*프로필 푸터 시작*/
 .profile-footer {
-  display: flex;
+  display: none;
   justify-content: center;
   font-size: 12px;
   color: var(--secondary);
 }
 /*프로필 푸터 끝*/
-
 /*프로필 끝*/
+@media (max-width: 767px) {
+  .profile-intro {
+    display: none;
+  } 
+  .profile-title {
+    font-size: 28px;
+  } 
+  .profile-description {
+    font-size: 13px;
+  }
+  .profile-footer {
+    display: flex;
+  }
+  .profile-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: none;
+    margin-bottom: none;
+  }
+}
