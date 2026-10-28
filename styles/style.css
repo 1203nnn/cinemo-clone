@@ -891,9 +891,9 @@ main .m-s-2 img {
   color: var(--secondary);
 }
 .profile-selection {
-  padding-top: 48px;
-  padding-bottom: 64px;
   gap: 56px;
+  padding-top: 116px;
+  padding-bottom: 120px;
 }
 .profile-introduction {
   gap: 16px;
@@ -924,7 +924,9 @@ main .m-s-2 img {
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
+  margin-top: 56px;
+  margin-bottom: 56px;
+} 
 
 .profile-card {
   display: flex;
@@ -975,6 +977,9 @@ main .m-s-2 img {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .profile-label {
