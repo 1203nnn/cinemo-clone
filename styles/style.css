@@ -290,6 +290,22 @@ li {
 .mv-button-right img {
   padding-top: 3px;
 }
+.mv-buttons button {
+  cursor: pointer;
+}
+.mv-button-left:hover {
+  background-color: #f7a18e;
+}
+.mv-button-left:active {
+  background-color: #de765f;
+}
+.mv-button-right:hover {
+  background-color: #35383d;
+}
+.mv-button-right:active {
+  background-color: #17191c;
+}
+
 .mv-down {
   display: flex;
   flex-direction: column;
