@@ -847,9 +847,10 @@ main .m-s-2 img {
 .mypage-content-logout-p {
   margin: 0;
 }
-
-.mypage-content-logout-button {
+.mypage-content-logout-link {
   margin-left: auto;
+}
+.mypage-content-logout-button {
   color: var(--secondary);
   background-color: var(--background);
   border: none;
