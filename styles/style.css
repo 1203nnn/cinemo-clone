@@ -401,8 +401,6 @@ li {
   .mv-description {
     font-size: 14px;
   }
-  @media (max-width: 1023px) {
-  }
 }
 /*메인 인덱스 섹션1 끝*/
 
@@ -420,6 +418,18 @@ main .m-s-2 img {
   margin: 0;
   padding: 0;
   overflow-x: auto;
+}
+.m-s-2 ul::-webkit-scrollbar {
+  height: 5px;
+}
+.m-s-2 ul::-webkit-scrollbar-track {
+  background-color: var(--sub-button-text);
+}
+.m-s-2 ul::-webkit-scrollbar-thumb {
+  background-color: #7e8289;
+}
+.m-s-2 ul::-webkit-scrollbar-thumb:hover {
+  background-color: #a5adb7;
 }
 .today-new-world,
 .deep-night {
@@ -500,6 +510,11 @@ main .m-s-2 img {
   font-weight: 400;
   margin: 0;
 }
+@media (max-width: 1023px) {
+  .m-s-2 ul::-webkit-scrollbar {
+    height: 4px;
+  }
+}
 @media (max-width: 767px) {
   .tnw-header,
   .dn-header {
@@ -525,6 +540,9 @@ main .m-s-2 img {
   .today-new-world h2,
   .deep-night h2 {
     font-size: 20px;
+  }
+  .m-s-2 ul::-webkit-scrollbar {
+    height: 3px;
   }
 }
 /*메인 인덱스 섹션2 끝*/
