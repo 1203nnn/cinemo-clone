@@ -1006,6 +1006,7 @@ input[type="checkbox"]:checked + label {
 .mypage-content h4 {
   font-size: 16px;
   font-weight: 500;
+  padding-bottom: 4px;
 }
 .mypage-content p {
   font-size: 11px;
