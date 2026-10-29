@@ -684,24 +684,23 @@ main .main-section2 img {
 
 /*마이페이지 섹션 시작*/
 .mypage-container {
+  display: flex;
+  flex-direction: column;
   max-width: 1440px;
   margin: auto;
-  padding: 56px 64px 64px;
+  padding: 56px 24px 64px;
   gap: 48px;
 }
 .mypage-mypage {
+  display: flex;
+  flex-direction: column;
   align-content: center;
   gap: 12px;
-  margin-bottom: 48px;
 }
 .mypage-my-cinemo {
   font-size: 11px;
+  font-weight: 400;
   color: var(--warm-coral);
-}
-.mypage-mypage h2 {
-  margin: 0;
-  padding-bottom: 12px;
-  padding-top: 12px;
 }
 .mypage-mypage h2 {
   font-size: 40px;
@@ -709,6 +708,8 @@ main .main-section2 img {
 }
 .mypage-mypage-p {
   font-size: 15px;
+  font-weight: 400;
+  line-height: 170%;
   color: var(--secondary);
 }
 .mypage-mypage h1 {
@@ -725,6 +726,7 @@ main .main-section2 img {
   box-sizing: border-box;
   height: 152px;
 }
+
 .mypage-profile-image-box {
   display: flex;
   flex-direction: row;
@@ -739,11 +741,12 @@ main .main-section2 img {
   align-items: center;
   width: 88px;
   height: 88px;
-  font-size: 42px;
   background: url("../assets/images/profile-b.webp") center / contain no-repeat;
   flex-shrink: 0;
 }
 .mypage-profile-image-Y {
+  font-size: 42.24px;
+  font-weight: 400;
   color: var(--text);
 }
 .maypage-profile-moum {
@@ -754,7 +757,6 @@ main .main-section2 img {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin: 0px;
 }
 .mypage-profile-left-menu {
   display: flex;
@@ -804,7 +806,7 @@ main .main-section2 img {
 }
 .mypage-profile-name-yolo {
   font-size: 28px;
-  margin: 0;
+  font-weight: 700;
 }
 .mypage-basic-profile {
   font-size: 11px;
@@ -824,6 +826,7 @@ main .main-section2 img {
 .mypage-profile-s-pc {
   margin: 0px;
   font-size: 11px;
+  font-weight: 400;
 }
 .mypage-profile-s-mobile {
   display: none;
@@ -831,13 +834,14 @@ main .main-section2 img {
 @media (max-width: 767px) {
   .mypage-profile-button {
     display: flex;
-    background-color: var(--profile-background);
-    color: var(--text);
+    align-items: center;
     border: 1px solid var(--border);
+    height: 40px;
+    padding: 0 16px;
     border-radius: 4px;
+    text-decoration: none;
     font-size: 13px;
-    gap: 9.5px;
-    padding: 15.5px 22px;
+    gap: 8px;
   }
   .mypage-profile-img {
     display: none;
@@ -849,15 +853,15 @@ main .main-section2 img {
   .mypage-profile {
     display: flex;
     background-color: var(--profile-background);
-    margin: 48px 0;
     width: 100%;
     height: 176px;
   }
-  .mypage-mypage h1 {
+  .mypage-mypage h2 {
     font-size: 30px;
   }
   .mypage-container {
-    padding: 36px 24px 40px 24px;
+    padding: 36px 16px 40px;
+    gap: 36px;
   }
   .maypage-profile-moum {
     flex-direction: column;
@@ -871,6 +875,7 @@ main .main-section2 img {
   .mypage-profile-s-mobile {
     display: block;
     font-size: 11px;
+    font-weight: 400;
   }
 }
 @media (max-width: 767px) {
@@ -881,16 +886,7 @@ main .main-section2 img {
     flex-direction: column;
     align-items: flex-start;
   }
-  .mypage-profile-button {
-    display: flex;
-    align-items: center;
-    border: 1px solid var(--border);
-    height: 16px;
-    padding: 12px 16px;
-    border-radius: 4px;
-    text-decoration: none;
-    gap: 8px;
-  }
+
   .mypage-profile-button-mom {
     display: flex;
     justify-content: space-between;
@@ -906,23 +902,28 @@ main .main-section2 img {
   .mypage-profile {
     height: 176px;
   }
-  .mypage-profile-imageY {
+  .mypage-profile-image-Y {
     font-size: 30.72px;
   }
   .mypage-profile-name-yolo {
     font-size: 22px;
   }
+  .mypage-mypage-p {
+    font-size: 13px;
+  }
 }
 
 /* 컨텐츠 */
-
 .content-images {
-  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 .mypage-content-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 .mypage-content {
   display: grid;
@@ -934,6 +935,15 @@ main .main-section2 img {
   object-fit: cover;
   list-style: none;
 }
+.mypage-content li {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.mypage-content p {
+  display: flex;
+  align-items: center;
+}
 .mypage-content div img {
   max-width: 100%;
   padding: 0px;
@@ -941,14 +951,24 @@ main .main-section2 img {
 .mypage-content-header h3 {
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 24px;
 }
 .mypage-content-header p {
   font-size: 12px;
   font-weight: 400;
   margin: 0;
 }
-
+.mypage-content-img-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.mypage-image-dot,
+.mypage-image-big-dot {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 .mypage-image-dot::before {
   display: flex;
   content: "";
@@ -971,7 +991,6 @@ main .main-section2 img {
 }
 .mypage-image-box {
   position: relative;
-  padding-bottom: 12px;
 }
 
 input[type="checkbox"] {
@@ -1016,7 +1035,6 @@ input[type="checkbox"]:checked + label {
 @media (max-width: 767px) {
   .mypage-content {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    margin: 24px 0 36px;
     gap: 16px;
   }
   .mypage-content h3 {
@@ -1031,10 +1049,9 @@ input[type="checkbox"]:checked + label {
 /* 계정 설정 */
 
 .mypage-account-settings {
-  margin-top: 48px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
 }
 .mypage-content-text-moum {
   display: flex;
@@ -1157,11 +1174,15 @@ input[type="checkbox"]:checked + label {
   .mypage-account-settings h3 {
     font-size: 20px;
   }
+  .mypage-content-list > div {
+    padding: 20px 0;
+  }
   .mypage-account-settings {
-    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
 }
-
 /*프로필 섹션 시작*/
 
 .profile-selection {
