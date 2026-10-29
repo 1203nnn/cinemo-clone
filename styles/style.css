@@ -737,7 +737,12 @@ main .m-s-2 img {
   text-decoration: none;
   gap: 8px;
 }
-
+.mypage-profile-button:hover {
+  background-color: #2b2e33;
+}
+.mypage-profile-button:active {
+  background-color: #101113;
+}
 .mypage-profile-img {
   width: 15px;
   height: 13.5px;
@@ -1178,6 +1183,9 @@ main .m-s-2 img {
   justify-content: center;
   align-items: center;
 }
+.button-mom a {
+  text-decoration: none;
+}
 .profile-manage-button {
   background-color: var(--background);
   width: 138px;
@@ -1189,9 +1197,14 @@ main .m-s-2 img {
   border-radius: 4px;
   cursor: pointer;
   text-decoration: none;
-  color: inherit;
+  gap: 8px;
 }
-
+.profile-manage-button:hover {
+  background-color: #202226;
+}
+.profile-manage-button:active {
+  background-color: #08090a;
+}
 .profile-label {
   font-size: 14px;
   color: var(--text);
