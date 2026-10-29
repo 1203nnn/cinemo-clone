@@ -399,6 +399,7 @@ li {
   align-items: center;
 }
 .mv-details-dot::before {
+  display: flex;
   content: "";
   width: 2px;
   height: 2px;
@@ -408,6 +409,7 @@ li {
   margin: 0 8px;
 }
 .mv-details-dot-big-space::before {
+  display: flex;
   content: "";
   width: 2px;
   height: 2px;
@@ -950,6 +952,27 @@ main .main-section2 img {
   font-size: 12px;
   font-weight: 400;
   margin: 0;
+}
+
+.mypage-image-dot::before {
+  display: flex;
+  content: "";
+  width: 2px;
+  height: 2px;
+  background-color: var(--secondary);
+  display: inline-block;
+  border-radius: 2px;
+  margin: 0 8px;
+}
+.mypage-image-big-dot::before {
+  display: flex;
+  content: "";
+  width: 2px;
+  height: 2px;
+  background-color: var(--secondary);
+  display: inline-block;
+  border-radius: 2px;
+  margin: 0 12px;
 }
 .mypage-image-box {
   position: relative;
