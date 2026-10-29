@@ -1221,3 +1221,36 @@ main .m-s-2 img {
 /*프로필 푸터 끝*/
 
 /*프로필 끝*/
+@media (max-width: 767px) {
+  .profile-intro {
+    display: none;
+  }
+  .profile-selection {
+    padding: 56px 24px;
+  }
+  .profile-title {
+    font-size: 28px;
+  }
+  .profile-info p {
+    display: none;
+  }
+  .profile-description {
+    font-size: 13px;
+  }
+  .profile-manage-button {
+    margin-top: 40px;
+  }
+  .profile-footer {
+    display: flex;
+    height: 111px;
+  }
+  .profile-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 32px;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+    width: 60%;
+  }
+}
