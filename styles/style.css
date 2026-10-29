@@ -1080,6 +1080,8 @@ input[type="checkbox"]:checked + label {
   padding-bottom: 120px;
 }
 .profile-introduction {
+  display: flex;
+  flex-direction: column;
   gap: 16px;
 }
 .profile-eyebrow {
@@ -1101,6 +1103,7 @@ input[type="checkbox"]:checked + label {
   justify-content: center;
   font-size: 15px;
   color: var(--secondary);
+  line-height: 180%;
 }
 
 .profile-options {
@@ -1249,5 +1252,4 @@ input[type="checkbox"]:checked + label {
     margin: auto;
     width: 60%;
   }
-  
 }
