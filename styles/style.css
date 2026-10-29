@@ -36,6 +36,7 @@ li {
   color: var(--secondary);
 }
 /*기본세팅*/
+
 /*공통 헤더 */
 .header {
   display: flex;
@@ -121,7 +122,7 @@ li {
 .header-avatar-letter {
   position: relative;
   z-index: 1;
-  color: #f3f1ed;
+  color: var(--text);
   font-family: "inter", sans-serif;
   font-size: 15.36px;
   font-weight: 400;
@@ -138,7 +139,6 @@ li {
 
   .header-logo {
     height: 72px;
-    margin-left: 24px;
   }
 
   .header-logo-image {
@@ -162,7 +162,6 @@ li {
     align-items: center;
     gap: 24px;
     height: 48px;
-    padding: 0 24px;
     border-bottom: 1px solid #303237;
   }
 
@@ -176,14 +175,12 @@ li {
 }
 @media (max-width: 1023px) {
   .header {
-    gap: 32px;
     padding: 0 32px;
   }
 }
-/*공통 헤더 끝*/
-/*공통 푸터 시작*/
 
-/*공통 푸터 끝*/
+/*공통 헤더 끝*/
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -239,6 +236,7 @@ li {
     font-size: 10px;
   }
 }
+
 /*메인 인덱스 시작*/
 
 /*메인 인덱스 섹션1 시작*/
@@ -299,7 +297,7 @@ li {
 }
 .mv-header {
   display: flex;
-  flex-direction: row;
+  align-items: center;
   gap: 12px;
 }
 .mv-header-badge::before {
@@ -308,7 +306,8 @@ li {
   height: 2px;
   background-color: var(--warm-coral);
   display: inline-block;
-  margin: 6px 12px 6px 0;
+  margin-bottom: 4px;
+  margin-right: 12px;
 }
 .mv-details > ul {
   display: flex;
@@ -403,6 +402,7 @@ li {
   font-size: 16px;
   font-weight: 400;
   line-height: 185%;
+  color: var(--text);
 }
 .mv-button-left span {
   font-size: 14px;
@@ -414,15 +414,12 @@ li {
   font-weight: 700;
   color: var(--text);
 }
-.mv-down h3 {
-  font-size: 14px;
-  font-weight: 400;
-  margin: 0;
-}
+
 .mv-down p {
   font-size: 10px;
   font-weight: 400;
   margin: 0;
+  color: var(--text);
 }
 
 @media (max-width: 767px) {
@@ -470,8 +467,7 @@ li {
 /*메인 인덱스 섹션1 끝*/
 
 /*메인 인덱스 섹션2 시작*/
-.m-s-2 {
-}
+
 main .m-s-2 img {
   width: 310px;
   height: 174px;
@@ -486,6 +482,7 @@ main .m-s-2 img {
 }
 .m-s-2 ul::-webkit-scrollbar {
   height: 5px;
+  width: 100%;
 }
 .m-s-2 ul::-webkit-scrollbar-track {
   background-color: var(--sub-button-text);
@@ -610,10 +607,11 @@ main .m-s-2 img {
     height: 3px;
   }
 }
+
 /*메인 인덱스 섹션2 끝*/
-/*메인 인덱스 끝*/
 
 /*마이페이지 시작*/
+
 @media (max-width: 767px) {
   .mypage-mypage .mypage-profile {
     margin-left: auto 24px auto 24px;
@@ -646,6 +644,12 @@ main .m-s-2 img {
 .mypage-my-cinemo {
   font-size: 11px;
   color: var(--warm-coral);
+  margin: 0;
+}
+.mypage-mypage h1 {
+  margin: 0;
+  padding-bottom: 12px;
+  padding-top: 12px;
 }
 .mypage-mypage h2 {
   font-size: 40px;
@@ -655,6 +659,7 @@ main .m-s-2 img {
 .mypage-mypage-p {
   font-size: 15px;
   color: var(--secondary);
+  margin: 0;
 }
 .mypage-mypage h1 {
   font-size: 40px;
@@ -804,6 +809,9 @@ main .m-s-2 img {
     width: 100%;
     height: 176px;
   }
+  .mypage-mypage h1 {
+    font-size: 30px;
+  }
   .mypage-container {
     padding: 36px 24px 40px 24px;
   }
@@ -861,7 +869,9 @@ main .m-s-2 img {
     font-size: 22px;
   }
 }
+
 /* 컨텐츠 */
+
 .content-images {
   margin-top: 48px;
 }
@@ -934,7 +944,9 @@ main .m-s-2 img {
     font-size: 20px;
   }
 }
+
 /* 계정 설정 */
+
 .mypage-account-settings {
   margin-top: 48px;
   display: flex;
@@ -1063,21 +1075,9 @@ main .m-s-2 img {
     font-size: 20px;
   }
 }
-/*마이페이지 섹션 끝*/
-/*마이페이지 끝*/
-
-/*프로필 시작*/
-
-/*프로필 헤더 시작*/
-/*프로필 헤더 끝*/
 
 /*프로필 섹션 시작*/
-.profile-intro {
-  display: flex;
-  justify-content: center;
-  font-size: 11px;
-  color: var(--secondary);
-}
+
 .profile-selection {
   gap: 56px;
   padding-top: 116px;
@@ -1222,9 +1222,6 @@ main .m-s-2 img {
 
 /*프로필 끝*/
 @media (max-width: 767px) {
-  .profile-intro {
-    display: none;
-  }
   .profile-selection {
     padding: 56px 24px;
   }
@@ -1236,6 +1233,8 @@ main .m-s-2 img {
   }
   .profile-description {
     font-size: 13px;
+    margin-top: 0;
+    margin-bottom: 40px;
   }
   .profile-manage-button {
     margin-top: 40px;
