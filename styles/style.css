@@ -1188,6 +1188,8 @@ main .m-s-2 img {
   border: 1px solid var(--border);
   border-radius: 4px;
   cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 
 .profile-label {
