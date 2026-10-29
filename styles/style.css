@@ -290,6 +290,8 @@ li {
 }
 
 .mv-up {
+  display: flex;
+  flex-direction: column;
   width: 540px;
   gap: 24px;
 }
