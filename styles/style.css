@@ -737,12 +737,7 @@ main .m-s-2 img {
   text-decoration: none;
   gap: 8px;
 }
-.mypage-profile-button:hover {
-  background-color: #2b2e33;
-}
-.mypage-profile-button:active {
-  background-color: #101113;
-}
+
 .mypage-profile-img {
   width: 15px;
   height: 13.5px;
@@ -786,7 +781,7 @@ main .m-s-2 img {
     color: var(--text);
     border: 1px solid var(--border);
     border-radius: 4px;
-    font-size: 13px;
+    font-size: 14px;
     gap: 9.5px;
     padding: 15.5px 22px;
   }
@@ -818,7 +813,6 @@ main .m-s-2 img {
   }
   .mypage-profile-s-mobile {
     display: block;
-    font-size: 11px;
   }
 }
 @media (max-width: 767px) {
@@ -834,7 +828,7 @@ main .m-s-2 img {
     align-items: center;
     border: 1px solid var(--border);
     height: 16px;
-    padding: 12px 16px;
+    padding: 12px 24px;
     border-radius: 4px;
     text-decoration: none;
     gap: 8px;
@@ -853,12 +847,6 @@ main .m-s-2 img {
   }
   .mypage-profile {
     height: 176px;
-  }
-  .mypage-profile-imageY {
-    font-size: 30.72px;
-  }
-  .mypage-profile-name-yolo {
-    font-size: 22px;
   }
 }
 /* 컨텐츠 */
@@ -914,7 +902,6 @@ main .m-s-2 img {
   font-size: 16px;
   font-weight: 500;
   margin: 0;
-  padding-bottom: 4px;
 }
 .mypage-content p {
   font-size: 11px;
@@ -927,12 +914,6 @@ main .m-s-2 img {
     margin: 24px 0 36px;
     gap: 16px;
   }
-  .mypage-content h3 {
-    font-size: 14px;
-  }
-  .mypage-content-header h2 {
-    font-size: 20px;
-  }
 }
 /* 계정 설정 */
 .mypage-account-settings {
@@ -944,6 +925,9 @@ main .m-s-2 img {
 .mypage-content-text-moum {
   display: flex;
   flex-direction: row;
+}
+.mypage-content-list > div {
+  padding: 24px 0;
 }
 .mypage-content-list > div {
   padding: 24px 0;
@@ -1026,7 +1010,7 @@ main .m-s-2 img {
 }
 .mypage-content-input {
   font-size: 14px;
-  font-weight: 400;
+
   margin: 0;
   color: var(--text);
 }
@@ -1047,6 +1031,9 @@ main .m-s-2 img {
   margin: 0;
 }
 @media (max-width: 767px) {
+  .mypage-content-text-e {
+    height: auto;
+  }
   .mypage-content-text-moum {
     display: flex;
     flex-direction: column;
@@ -1058,9 +1045,6 @@ main .m-s-2 img {
   }
   .mypage-content-input {
     margin: 0;
-  }
-  .mypage-account-settings h2 {
-    font-size: 20px;
   }
 }
 /*마이페이지 섹션 끝*/
@@ -1183,9 +1167,6 @@ main .m-s-2 img {
   justify-content: center;
   align-items: center;
 }
-.button-mom a {
-  text-decoration: none;
-}
 .profile-manage-button {
   background-color: var(--background);
   width: 138px;
@@ -1196,15 +1177,8 @@ main .m-s-2 img {
   border: 1px solid var(--border);
   border-radius: 4px;
   cursor: pointer;
-  text-decoration: none;
-  gap: 8px;
 }
-.profile-manage-button:hover {
-  background-color: #202226;
-}
-.profile-manage-button:active {
-  background-color: #08090a;
-}
+
 .profile-label {
   font-size: 14px;
   color: var(--text);
@@ -1213,44 +1187,31 @@ main .m-s-2 img {
 
 /*프로필 푸터 시작*/
 .profile-footer {
-  display: flex;
+  display: none;
   justify-content: center;
   font-size: 12px;
   color: var(--secondary);
 }
 /*프로필 푸터 끝*/
-
 /*프로필 끝*/
 @media (max-width: 767px) {
   .profile-intro {
     display: none;
   }
-  .profile-selection {
-    padding: 56px 24px;
-  }
   .profile-title {
     font-size: 28px;
-  }
-  .profile-info p {
-    display: none;
   }
   .profile-description {
     font-size: 13px;
   }
-  .profile-manage-button {
-    margin-top: 40px;
-  }
   .profile-footer {
     display: flex;
-    height: 111px;
   }
   .profile-options {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 32px;
-    justify-items: center;
-    align-items: center;
-    margin: auto;
-    width: 60%;
+    gap: 16px;
+    margin-top: none;
+    margin-bottom: none;
   }
 }
