@@ -643,19 +643,19 @@ main .m-s-2 img {
 }
 .mypage-my-cinemo {
   font-size: 11px;
+  font-weight: 400;
   color: var(--warm-coral);
 }
-.mypage-mypage h2 {
+.mypage-mypage h1 {
   font-size: 40px;
   font-weight: 700;
   margin: 0;
 }
 .mypage-mypage-p {
   font-size: 15px;
+  font-weight: 400;
+  line-height: 170%;
   color: var(--secondary);
-}
-.mypage-mypage h1 {
-  font-size: 40px;
 }
 
 /*마이페이지 마이프로필*/
@@ -812,8 +812,6 @@ main .m-s-2 img {
   .mypage-profile-s-mobile {
     display: block;
   }
-}
-@media (max-width: 767px) {
   .mypage-profile {
     padding: 24px;
   }
@@ -845,6 +843,12 @@ main .m-s-2 img {
   }
   .mypage-profile {
     height: 176px;
+  }
+  .mypmypage-mypage h1 {
+    font-weight: 30px;
+  }
+  .mypage-mypage-p {
+    font-weight: 13px;
   }
 }
 /* 컨텐츠 */
