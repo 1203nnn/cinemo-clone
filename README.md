@@ -47,4 +47,4 @@ CINEMO/
 ├── maypage.html
 ├── profile.html
 ├── styles/
-└── REDME.md
+└── README.md
